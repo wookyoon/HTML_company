@@ -19,6 +19,176 @@ a {
   opacity: 0;
 }
 
+#sub {
+  background-image: url(../img/lo.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  animation: fadein 0.5s;
+}
+
+#visual_sub {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  margin-bottom: 108px;
+}
+#visual_sub .inner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#visual_sub .inner .mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(2);
+}
+#visual_sub .inner h1 {
+  font: bold 40px "oswald";
+  letter-spacing: 10px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-shadow: #000 1px 1px 1px;
+  animation: fadein 1s;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  top: -200px;
+  background-color: #fff;
+}
+
+#sub {
+  background-image: url(../img/lo.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  animation: fadein 0.5s;
+}
+
+#visual_sub {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  margin-bottom: 108px;
+}
+#visual_sub .inner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#visual_sub .inner .mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(2);
+}
+#visual_sub .inner h1 {
+  font: bold 40px "oswald";
+  letter-spacing: 10px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-shadow: #000 1px 1px 1px;
+  animation: fadein 1s;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  top: -200px;
+  background-color: #fff;
+}
+
+#sub {
+  background-image: url(../img/lo.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  animation: fadein 0.5s;
+}
+
+#visual_sub {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  margin-bottom: 108px;
+}
+#visual_sub .inner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#visual_sub .inner .mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.5);
+}
+#visual_sub .inner h1 {
+  font: bold 40px "oswald";
+  letter-spacing: 10px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-shadow: #000 1px 1px 1px;
+  animation: fadein 1s;
+}
+
+.content {
+  width: 100%;
+  top: -200px;
+  background-color: #fff;
+}
+.content .inner {
+  width: 1180px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.content .inner .member_info {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  margin-bottom: 35px;
+}
+.content .inner .member_info a .face {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .inner .member_info .info {
+  width: 280px;
+  height: 90px;
+  background-color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  position: relative;
+  left: 80px;
+  top: -94px;
+  padding: 20px;
+}
+.content .inner .member_info .info h5 {
+  font: 14px/1.5 "lato";
+  color: #999;
+}
+.content .inner .member_info .info p {
+  font: 20px/1.5 "lato";
+  color: #fff;
+}
+
 #header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);

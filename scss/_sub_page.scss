@@ -1,0 +1,15 @@
+@charset "UTF-8"; 
+#sub {background-image: url(../img/lo.gif); background-repeat: no-repeat; background-position: center center; background-size: contain; animation: fadein 0.5s;}
+#visual_sub{
+    width: 100%; position: relative; top: -100px; margin-bottom: 108px;
+    .inner{ 
+        width: 100%; height: 300px; overflow: hidden; 
+        .mainImage{ 
+            width: 100%; height: 100%; object-fit: cover; filter: saturate(2); 
+        }
+        h1{
+            font: bold 40px 'oswald'; letter-spacing: 10px; color: #fff; position: absolute; left: 50%; top: 50%; transform: translateX(-50%); text-shadow: #000 1px 1px 1px; animation: fadein 1s;
+        }
+    }
+}
+.content{width: 100%; position: relative; top: -200px;background-color: #fff;}
