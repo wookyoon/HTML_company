@@ -54,7 +54,7 @@
 }
 
 #visual{
-    width: 100%; position: relative; top: -100px; background-image: url(../img/lo.gif); background-repeat: no-repeat; background-position: center center; background-size: contain; 
+    width: 100%; position: relative; top: -100px; background-color: #000; background-repeat: no-repeat; background-position: center center; background-size: contain;
     .inner{ 
         width: 100%; height: 100vh; overflow: hidden; 
         .mainImage{ 
@@ -145,7 +145,6 @@
             .below{
                 dl{transition: 1s;
                     dt{font: bold 22px/1.5 'lato'; margin-bottom: 5px; cursor: pointer; transition: 1s;
-                    &.on{}
                     }
                     dd{font: bold 18px/1.5 'lato'; color: #999; margin-bottom: 10px; display: none; 
                         &.on{display: block;}}

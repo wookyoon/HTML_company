@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/4835c326cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <div id="logo">
+                <a href="index.html">logo.</a>
+            </div>
+            <nav id="navigation">
+                <ul id="menu">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+            <div class="navRight">
+                <div class="icon">
+                    <a href="youtube.html"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="community.html"><i class="fa-brands fa-instagram" id="insta"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="join.html">JOIN</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <figure id="visual_sub">
+        <div class="inner">
+            <img class="mainImage" src="img/people-2557399_1920.jpg" alt="">
+            <h1>JOIN</h1>
+        </div>
+    </figure>
+
+    <section class="content_join">
+        <div class="inner">
+          <div class="pic">
+          <img src="img/interior-3804129_1920.jpg" alt="">
+            </div>
+          <div class="member">
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="hidden">회원가입 폼 입력 양식</legend>
+
+                    <table>
+                        <caption class="hidden">회원가입을 위한 아이디, 비밀번호, 이메일, 성별, 학력, 취미, 남기는 말 입력 테이블</caption>
+                        <tbody>
+                            <!-- userId -->
+
+                            <tr>
+                                <th scope="row"><label for="userid">User Id</label></th>
+                                <td>
+                                    <input type="text" name="userid" id="userid" >
+                                </td>
+                            </tr>
+
+                            <!-- password -->
+
+                            <tr>
+                                <th scope="row"><label for="pwd1">Password</label></th>
+                                <td>
+                                    <input type="password" name="pwd1" id="pwd1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="pwd2">Re Password</label></th>
+                                <td>
+                                    <input type="password" name="pwd2" id="pwd2">
+                                </td>
+                            </tr>
+
+                            <!-- email -->
+                            <tr>
+                                <th scope="row"><label for="email">E- mail</label></th>
+                                <td>
+                                    <input type="text" name="email" id="email">
+                                </td>
+                            </tr>
+
+                            <!-- education -->
+                            <tr>
+                                <th scope="row"><label for="edu">Education</label></th>
+                                <td>
+                                    <select name="edu" id="edu">
+                                        <option value="secondary school">secondary school</option>
+                                        <option value="university">university</option>
+                                        <option value="postgraduate school">postgraduate school</option>
+                                        <option value="phd">Ph.D</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- gender -->
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+
+                            <!-- interest -->
+                            <tr>
+                                <th scope="row">Interests</th>
+                                <td>
+                                    <label for="sports">Sports</label>
+                                    <input type="checkbox" name="hoddy" id="sports" value="sports">
+
+                                    <label for="music">Music</label>
+                                    <input type="checkbox" name="hobby" id="music" value="music">
+
+                                    <label for="game">Game</label>
+                                    <input type="checkbox" name="hobby" id="game" value="game">
+
+                                    <label for="reading">etc</label>
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">
+                                </td>
+                            </tr>
+
+                            <!-- comments -->
+                            <tr>
+                                <th scope="row"><label for="comments">Comments</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" ></textarea>
+                                </td>
+                            </tr>
+
+                            <!-- btns -->
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancle">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+          </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="left">
+                <h2>logo.</h2>
+                <p>The era of multipurpose theme has been turned into<br>a new leaf with the birth of Nito. It will amaze you<br>with its powerful technology as well as exquisite<br>design in minimal style.</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" id="insta"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="middle">
+                <h6>CONTACT
+                </h6>
+                    <ul>
+                        <li>14 Tottenham Courtten Road, London,<br> England.</li>
+                        <li>info@zooka.com</li>
+                        <li>T / (102) 6666 8888</li>
+                        <li><a href="#">www.zooka.com</a></li>
+                    </ul>               
+            </div>
+            <div class="right">
+                <h6>LATEST POST</h6>
+                <ul>
+                    <li>
+                        <a href="#">Supersonic import</a>
+                        <span>October 12, 2022</span>
+                    </li>
+                    <li>
+                        <a href="#">Effortless customization</a>
+                        <span>October 12, 2022</span>
+                    </li>
+                    <li>
+                        <a href="#">Powerful shortcodes</a>
+                        <span>October 12, 2022</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

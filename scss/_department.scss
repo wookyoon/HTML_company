@@ -1,34 +1,42 @@
-@charset "UTF-8"; 
-#sub {background-image: url(../img/lo.gif); background-repeat: no-repeat; background-position: center center; background-size: contain; animation: fadein 0.5s;}
-#visual_sub{
-    width: 100%; position: relative; top: -100px; margin-bottom: 108px;
-    .inner{ 
-        width: 100%; height: 300px; overflow: hidden; 
-        .mainImage{ 
-            width: 100%; height: 100%; object-fit: cover; filter: saturate(1.5); 
-        }
-        h1{
-            font: bold 40px 'oswald'; letter-spacing: 10px; color: #fff; position: absolute; left: 50%; top: 50%; transform: translateX(-50%); text-shadow: #000 1px 1px 1px; animation: fadein 1s;
-        }
-    }
-}
-    .content{
-        width: 100%; top: -200px; background-color: #fff;
-        .inner{width: 1180px; height: 100vh; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; align-content:space-between;
+    .content_department{
+        width: 100%; position: relative; top: -100px; background-color: #fff; 
+        .inner{
+            position: relative; width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; animation: fadein 1s;
             .member_info{
-                position: relative; width: 360px; height: 360px;
-                margin-bottom: 35px;
+                position: relative; width: 300px; height: 300px;
+                margin-bottom: 60px;
                 a{
                     .face{
                     width: 100%; height: 100%; object-fit: cover;}
+                    i{
+                        position: absolute;
+                        font-size: 100px;
+                        color: #000;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+                        opacity: 0;
+                    }
+                  
               
             }
                 .info{
-                     width: 280px; height: 90px; background-color: #000; letter-spacing: 2px; opacity: 1; position: relative; left: 80px; top: -94px; padding: 20px;
-                         h5{font: 14px/1.5 'lato'; color: #999;}
-                        p{font: 20px/1.5 'lato'; color: #fff;}
+                     width: 200px; height: 60px; background-color: #000; letter-spacing: 2px; opacity: 1; position: relative; left: 100px; top: -64px; padding: 20px;
+                         h5{font: 14px/0.2 'lato'; color: #999;}
+                        p{font: 20px/1.8 'lato'; color: #fff;}
             }
-            
+            &:hover {
+                .face{
+                    opacity: 0.5;
+                }
+                i{
+                    opacity: 1;
+                }
+                .info{
+                    opacity: 0;
+                }
+            }
             }
         }
     }
