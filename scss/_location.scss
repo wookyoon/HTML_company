@@ -1,53 +1,99 @@
-.content_location{width: 100%; position: relative; top: -100px;background-color: #fff; animation: fadein 1s;
-    .inner{width: 1180px; margin: 0 auto; display: flex;
-        justify-content: space-between; align-items:flex-start;
-    .loca{
-        width: 580px;
-    #map{
-        width: 100%; height: 500px; border: 1px solid #000;
-        margin-bottom: 20px;
-    }
-    &::after{content: ''; display: block; clear: both;}
+.content_location {
+	width: 100%;
+	position: relative;
+	top: -100px;
+	background-color: #fff;
+	animation: fadein 1s;
+	.title {
+		width: 1180px;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		padding-left: 50px;
 
-    .traffic{
-        float: left;
-        li{
-            float: left; margin-right: 20px;
-            a{
-                display: block;
-                width: 100px; height: 40px; background: #555;
-                font: bold 12px/40px 'LATO';
-                color: #fff; text-align: center;
-                border: 1px solid #555;
-            }
-            &.on a{
-                background: #fff; color: #333;
-            }
-        }
-    }
-    .branch{
-        float: right;
-        li{
-            float: left; margin-left: 10px;
-            a{
-                display: block;
-                width: 100px; height: 40px;
-                background: #555;
-                font: bold 12px/40px 'LATO';
-                color: #fff; text-align: center;
-                border: 1px solid #555;
-            }
-            &.on a{
-                background: #fff; color: #333;
-            }
-        }
-    }
-    }
-    .pic{
-        width: 580px; height: 500px; 
-        img{
-            width: 100%; height: 100%; object-fit: cover; filter: saturate(1.5);
-        }
-    }
-}
+		h1 {
+			text-align: left;
+			font: bold 50px/1 'oswald';
+			letter-spacing: 3px;
+			margin-bottom: 20px;
+		}
+		p {
+			font: bold 15px/1.5 'lato';
+			letter-spacing: 1px;
+			color: #999;
+		}
+	}
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		.loca {
+			width: 580px;
+			#map {
+				width: 100%;
+				height: 500px;
+				border: 1px solid #000;
+				margin-bottom: 20px;
+			}
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.traffic {
+				float: left;
+				li {
+					float: left;
+					margin-right: 20px;
+					a {
+						display: block;
+						width: 100px;
+						height: 40px;
+						background: #555;
+						font: bold 12px/40px 'LATO';
+						color: #fff;
+						text-align: center;
+						border: 1px solid #555;
+					}
+					&.on a {
+						background: #fff;
+						color: #333;
+					}
+				}
+			}
+			.branch {
+				float: right;
+				li {
+					float: left;
+					margin-left: 10px;
+					a {
+						display: block;
+						width: 100px;
+						height: 40px;
+						background: #555;
+						font: bold 12px/40px 'LATO';
+						color: #fff;
+						text-align: center;
+						border: 1px solid #555;
+					}
+					&.on a {
+						background: #fff;
+						color: #333;
+					}
+				}
+			}
+		}
+		.pic {
+			width: 580px;
+			height: 500px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				filter: saturate(1.5);
+			}
+		}
+	}
 }

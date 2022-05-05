@@ -60,6 +60,24 @@ a {
   position: relative;
   top: -100px;
   background-color: #fff;
+  animation: fadein 1s;
+}
+.content_community .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_community .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_community .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
 }
 .content_community .inner {
   width: 1180px;
@@ -179,6 +197,24 @@ a {
   position: relative;
   top: -100px;
   background-color: #fff;
+  animation: fadein 1s;
+}
+.content_department .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_department .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_department .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
 }
 .content_department .inner {
   position: relative;
@@ -242,9 +278,26 @@ a {
 .content_gallery {
   width: 100%;
   position: relative;
-  top: -200px;
+  top: -100px;
   background-color: #fff;
   animation: fadein 1s;
+}
+.content_gallery .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_gallery .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_gallery .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
 }
 .content_gallery .inner {
   width: 1180px;
@@ -252,22 +305,26 @@ a {
   text-align: center;
 }
 .content_gallery .inner #gallery #searchBox {
-  position: relative;
-  top: 100px;
-  left: 30px;
+  width: 500px;
+  padding: 50px;
+  font-size: 0;
+  position: absolute;
+  top: 0px;
+  right: 260px;
 }
 .content_gallery .inner #gallery #searchBox #search {
-  width: 400px;
-  height: 40px;
+  width: 300px;
+  height: 30px;
   border: 2px solid #000;
-  font: bold 22px "lato";
+  font: bold 16px "lato";
   color: #fff;
   background-color: #000;
 }
 .content_gallery .inner #gallery #searchBox .btnSearch {
   width: 90px;
-  height: 40px;
-  font: bold 18px "lato";
+  height: 30px;
+  font: bold 16px "oswald";
+  letter-spacing: 1px;
   color: #000;
   background-color: #fff;
   border: none;
@@ -279,71 +336,61 @@ a {
   color: #fff;
   background-color: #000;
 }
-.content_gallery .inner #gallery #searchBox #wrap {
+.content_gallery .inner #gallery #wrap {
   width: 100%;
   padding: 50px;
 }
-.content_gallery .inner #gallery #searchBox #wrap .loading {
+.content_gallery .inner #gallery #wrap .loading {
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 1s;
 }
-.content_gallery .inner #gallery #searchBox #wrap .loading.off {
+.content_gallery .inner #gallery #wrap .loading.off {
   opacity: 0;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list {
+.content_gallery .inner #gallery #wrap #list {
   width: 100%;
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list.on {
+.content_gallery .inner #gallery #wrap #list.on {
   opacity: 1;
   transform: translateY(0px);
 }
-.content_gallery .inner #gallery #searchBox #wrap #list::after {
+.content_gallery .inner #gallery #wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list li {
+.content_gallery .inner #gallery #wrap #list li {
   float: left;
-  width: 33.3333333333%;
+  width: 25%;
   padding: 10px;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list li div {
+.content_gallery .inner #gallery #wrap #list li div {
   width: 100%;
-  padding: 20px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  padding: 0px;
+  box-shadow: 0;
+  background-color: #000;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list li div a > img {
+.content_gallery .inner #gallery #wrap #list li div a > img {
   width: 100%;
   filter: grayscale(100%);
 }
-.content_gallery .inner #gallery #searchBox #wrap #list li div p {
-  font: 12px/1.2 "arial";
-  color: #777;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.content_gallery .inner #gallery #wrap #list li div p {
+  font: 20px/2 "oswald";
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.content_gallery .inner #gallery #searchBox #wrap #list li div span {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-.content_gallery .inner #gallery #searchBox #wrap #list li div span > img {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-.content_gallery .inner #gallery #searchBox #wrap #list li div span strong {
-  font: 11px/1 "arial";
-  color: orange;
-}
-.content_gallery .inner #gallery #searchBox #wrap #list li div:hover a > img {
+.content_gallery .inner #gallery #wrap #list li div:hover a > img {
   filter: grayscale(0%);
 }
-.content_gallery .inner #gallery aside {
+.content_gallery .inner aside {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -355,42 +402,60 @@ a {
   justify-content: center;
   align-items: center;
 }
-.content_gallery .inner #gallery aside .con {
+.content_gallery .inner aside .con {
   width: 100%;
   height: 100%;
 }
-.content_gallery .inner #gallery aside .con > img {
+.content_gallery .inner aside .con > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.content_gallery .inner #gallery aside .close {
+.content_gallery .inner aside .close {
   position: absolute;
   top: 20px;
   right: 20px;
   color: #fff;
 }
+
 @media screen and (max-width: 999px) {
-  .content_gallery .inner #gallery #gallery #wrap #list li {
+  #gallery #wrap #list li {
     width: 33.3333333333%;
   }
 }
 @media screen and (max-width: 749px) {
-  .content_gallery .inner #gallery #gallery #wrap #list li {
+  #gallery #wrap #list li {
     width: 50%;
   }
 }
 @media screen and (max-width: 439px) {
-  .content_gallery .inner #gallery #gallery #wrap #list li {
+  #gallery #wrap #list li {
     width: 100%;
   }
 }
-
 .content_join {
   width: 100%;
   position: relative;
   top: -100px;
   background-color: #fff;
+  animation: fadein 1s;
+}
+.content_join .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_join .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_join .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
 }
 .content_join .inner {
   width: 1180px;
@@ -413,14 +478,16 @@ a {
 .content_join .inner .member {
   width: 590px;
 }
-.content_join .inner .member table th, .content_join .inner .member table td {
+.content_join .inner .member table th,
+.content_join .inner .member table td {
   border-bottom: 1px solid #000;
   padding: 15px 25px;
 }
 .content_join .inner .member table th {
   width: 20%;
 }
-.content_join .inner .member table th input[type=reset], .content_join .inner .member table th input[type=submit] {
+.content_join .inner .member table th input[type=reset],
+.content_join .inner .member table th input[type=submit] {
   width: 30%;
   height: 40px;
   margin: 10px;
@@ -430,20 +497,24 @@ a {
   cursor: pointer;
   transition: 0.5s;
 }
-.content_join .inner .member table th input[type=reset]:hover, .content_join .inner .member table th input[type=submit]:hover {
+.content_join .inner .member table th input[type=reset]:hover,
+.content_join .inner .member table th input[type=submit]:hover {
   background: #000;
   color: #fff;
 }
 .content_join .inner .member table td {
   border-left: 1px solid #000;
 }
-.content_join .inner .member table td input[type=text], .content_join .inner .member table td input[type=password], .content_join .inner .member table td select {
+.content_join .inner .member table td input[type=text],
+.content_join .inner .member table td input[type=password],
+.content_join .inner .member table td select {
   width: 40%;
   background: #eee;
   padding: 10px;
   border: 1px solid #000;
 }
-.content_join .inner .member table td input[type=radio], .content_join .inner .member table td input[type=checkbox] {
+.content_join .inner .member table td input[type=radio],
+.content_join .inner .member table td input[type=checkbox] {
   margin-right: 30px;
 }
 .content_join .inner .member table td textarea {
@@ -468,6 +539,23 @@ a {
   top: -100px;
   background-color: #fff;
   animation: fadein 1s;
+}
+.content_location .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_location .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_location .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
 }
 .content_location .inner {
   width: 1180px;
@@ -550,6 +638,23 @@ a {
   background-color: #fff;
   animation: fadein 1s;
 }
+.content_youtube .title {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+.content_youtube .title h1 {
+  text-align: left;
+  font: bold 50px/1 "oswald";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.content_youtube .title p {
+  font: bold 15px/1.5 "lato";
+  letter-spacing: 1px;
+  color: #999;
+}
 .content_youtube .vidList {
   width: 1180px;
   margin: 0 auto;
@@ -610,7 +715,7 @@ a {
 
 #header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   z-index: 1;
 }
